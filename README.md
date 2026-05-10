@@ -16,3 +16,6 @@ Decoder (Reconstruction):
 | 1 | ~0.036 |
 | 5 | ~0.032 |
 | 10 | ~0.030 |
+
+<img width="252" height="56" alt="epoch_0" src="https://github.com/user-attachments/assets/98b90292-ef95-488a-83de-5ab876012903" />
+
