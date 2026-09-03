@@ -1,15 +1,26 @@
-# Autoencoder-using-pytorch
-PyTorch implementation of a Linear Autoencoder trained on MNIST — 
-compresses 784-dimensional images into a 3-dimensional latent vector 
-and reconstructs them using a symmetric decoder architecture.
+# Autoencoder (PyTorch)
 
-Takes a 28×28 handwritten digit image, compresses it into just 3 numbers (latent vector), then reconstructs the original image from those 3 numbers — with no labels required.
+An autoencoder built in PyTorch that compresses an image into a compact latent vector and reconstructs it. A foundational unsupervised-learning project demonstrating representation learning and dimensionality reduction.
 
-Encoder (Compression):
-784 → 128 → 64 → 12 → 3   ← latent vector
+## What It Does
 
-Decoder (Reconstruction):
-3 → 12 → 64 → 128 → 784   ← reconstructed image
+- **Encoder** compresses the input image into a lower-dimensional latent vector.
+- **Decoder** reconstructs the original image from that latent vector.
+- The network learns, without labels, to capture the most important features needed to rebuild its input.
+
+## Tech Stack
+
+Python, PyTorch
+
+
+
+## Notes / Future Improvements
+
+- Compare reconstruction quality across different latent vector sizes.
+- Extend to a denoising autoencoder (reconstruct clean images from noisy inputs).
+- This project pairs naturally with the Variational Autoencoder repo — the VAE extends this idea to a probabilistic latent space.
+
+
 
 | Epoch | Loss |
 |---|---|
